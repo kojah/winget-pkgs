@@ -1,0 +1,31 @@
+# winget default locale manifest for the Mash command-line programs, filled by packaging/render.py.
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+PackageIdentifier: MashHQ.Mash.CLI
+PackageVersion: 0.3.0
+PackageLocale: en-US
+Publisher: MashHQ
+PublisherUrl: https://github.com/mashhq
+PublisherSupportUrl: https://github.com/mashhq/mash/issues
+PackageName: Mash CLI
+PackageUrl: https://getmash.io/
+License: MIT OR Apache-2.0
+LicenseUrl: https://github.com/mashhq/mash/blob/v0.3.0/LICENSE-MIT
+ShortDescription: Search past coding-agent chats from your terminal, browser, or agents
+Description: |-
+  Mash indexes the chat histories of your coding agents and finds past chats,
+  decisions and records across agents and machines, from the terminal, a local
+  web dashboard (mash dash), or the agents themselves over MCP.
+  This package holds the command-line programs, mash and mash-server. The Mash
+  desktop app, which carries its own copy of mash, is the package MashHQ.Mash.
+Moniker: mash-cli
+Tags:
+  - ai
+  - coding-agents
+  - search
+  - history
+  - mcp
+  - cli
+ReleaseNotesUrl: https://github.com/mashhq/mash/releases/tag/v0.3.0
+InstallationNotes: Run mash qdrant install, then mash init to choose which histories to read. Run mash dash and open the address it prints to search in your browser.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
